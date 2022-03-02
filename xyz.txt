@@ -1,0 +1,161 @@
+Que.12
+list1=[5,10,15,20,25,50,20]
+print(list1[3])
+list1[3]=200
+print(list1)
+
+Ans
+20
+[5, 10, 15, 200, 25, 50, 20]
+
+Que.11
+list1=["a","b",["c",["d","e",["f","g"],"k"],"l"],"m","n"]
+sublist=["h","i","j"]
+list1[2][1][2].extend(sublist)
+print(list1)
+
+Ans.
+['a', 'b', ['c', ['d', 'e', ['f', 'g', 'h', 'i', 'j'], 'k'], 'l'], 'm', 'n']
+
+Que.10
+a=input("Enter a string")
+x=a.split()
+x.sort( )
+print(x)
+
+Ans.
+Enter a stringWelcome in python world
+['Welcome', 'in', 'python', 'world']
+
+Que.9
+x=input('Enter string input')
+y=x[-1 : :-1]
+if x==y:
+    print("The string is palindrome")
+else:
+    print("The string is not palindrome")
+
+Ans-
+Enter string inputmadam
+The string is palindrome
+
+Que.8
+x=int(input("Enter year"))
+if (x%4==0):
+    print("it is leap year")
+elif(x%100==0):
+    print("It not leap year")
+else:
+    print("it not leap year")
+
+Ans-
+Enter year2008
+it is leap year
+
+Que.7
+x=int(input("Enter first number"))
+y=int(input("Enter second number"))
+z=int(input("Enter third number"))
+
+if x==y==z:
+    print("All number are equal")
+else:
+   if(x>=z)and(x>=y):
+    print(x)
+if(y>=z)and(y>=x):
+    print(y)
+else:
+    print(z)
+
+Ans-
+
+Enter first number12
+Enter second number23
+Enter third number66
+66
+
+Que- 6
+x=float(input("Enter first subject score"))
+y=float(input("Enter second subject score"))
+z=float(input("Enter third subject score"))
+w=float(input("Enter fourth subject score"))
+v=float(input("Enter fifth subject score"))
+a=(x+y+z+w+v)* 100 /(500)
+print(a)
+if(a>=60):
+    print("Pass with first division")
+elif(a>= 50 and a<=59):
+    print("Pass with second division")
+elif(a>= 40 and a<=49):
+    print("Pass with Third division")
+elif(a< 40):
+    print("fail")
+
+Ans-
+Enter first subject score73
+Enter second subject score96
+Enter third subject score86
+Enter fourth subject score94
+Enter fifth subject score90
+87.8
+Pass with first division
+
+Que.4
+color_list=["Red","Green","White","Black"]
+print(color_list[0],color_list[3])
+
+Ans-
+Red Black
+ 
+Que- 3
+list=[2,4,56,59,10,-1,258,77]
+y= list.sort()
+print("smallets number in the list is:",list[0])
+ 
+Ans-
+smallets number in the list is: -1
+
+Que-2
+list=[2,4,56,59,10,-1,258,77]
+y= list.sort()
+print("largest number in the list is:",list[-1])
+
+Ans-
+largest number in the list is: 258
+
+Que-1
+x=[]
+num=int(input("How many input"))
+for n in range(num):
+    number=int(input("Enter number"))
+    x.append(number)
+print("Sum of the number in given list",sum(x))
+
+Ans-
+How many input5
+Enter number1
+Enter number12
+Enter number1
+Enter number10
+Enter number10
+Sum of the number in given list 34
+
+Que.-
+def add_string(str1):
+  length = len(str1)
+
+  if length > 2:
+    if str1[-3:] == 'ing':
+      str1 += 'ly'
+    else:
+      str1 += 'ing'
+
+  return str1
+print(add_string('asd'))
+print(add_string('adding'))
+print(add_string('addi'))
+
+Ans-
+asding
+addingly
+addiing
